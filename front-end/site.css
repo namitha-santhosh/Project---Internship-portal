@@ -1,0 +1,25 @@
+header {
+    background-color: #280101;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+h2 {
+    padding: 30px;
+    text-align:center;
+    font-size:25px;
+    color:black;
+}
+
+#contact {
+    padding: 10px;
+    text-align: start;
+    font-size:25px;
+    color:black;
+}
+
+* {
+    box-sizing: border-box;
+  }
