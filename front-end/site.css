@@ -4,15 +4,17 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
+    background-image: url("bg.jpg");
   }
 
 nav{
   text-align:right;
 }
 
+
 #link{
   font-size:20px;
-  background-color: rgb(234, 234, 160);
+  background-color:rgb(105, 179, 225);
   color:rgb(39, 39, 34);
   text-decoration: none;
 }
@@ -36,14 +38,20 @@ h2 {
   }
 
 footer{
-  background-color:#e5e5e5;
-  text-align:center;
-  padding:10px;
-  margin-top:7px;
+    text-align:center;
+    color:rgb(32, 66, 77);
+    padding:2px;
+    background-color:#e5e5e5;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    grid-area: footer;
 }
 
+
 #Company{
-  background-color: rgb(128, 7, 7);
+  background-color: rgb(11, 3, 72);
   color: white;
   font-size:20px;
   font-weight: bold;
@@ -53,11 +61,26 @@ footer{
 }
 
 #Intern{
-  background-color: rgb(128, 7, 7);
+  background-color: rgb(11, 3, 72);
   color: white;
   font-size:20px;
   font-weight: bold;
   padding:6px;
   margin: 6px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h3.about{
+  text-align:left;
+  border-style: double;
+}
+
+.about{
+  margin-right:1050px;
+}
+
+#usertype{
+  text-align:center;
+  padding:2px 10px;
+  margin:auto;
 }
