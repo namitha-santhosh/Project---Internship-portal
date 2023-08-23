@@ -6,6 +6,17 @@ header {
     color: white;
   }
 
+nav{
+  text-align:right;
+}
+
+#link{
+  font-size:20px;
+  background-color: rgb(234, 234, 160);
+  color:rgb(39, 39, 34);
+  text-decoration: none;
+}
+
 h2 {
     padding: 30px;
     text-align:center;
@@ -23,3 +34,30 @@ h2 {
 * {
     box-sizing: border-box;
   }
+
+footer{
+  background-color:#e5e5e5;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+}
+
+#Company{
+  background-color: rgb(128, 7, 7);
+  color: white;
+  font-size:20px;
+  font-weight: bold;
+  padding:6px;
+  margin: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Intern{
+  background-color: rgb(128, 7, 7);
+  color: white;
+  font-size:20px;
+  font-weight: bold;
+  padding:6px;
+  margin: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
