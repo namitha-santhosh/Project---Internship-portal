@@ -71,16 +71,22 @@ footer{
 }
 
 h3.about{
-  text-align:left;
-  border-style: double;
+  text-align:center;
+  border-style: solid;
 }
 
 .about{
-  margin-right:1050px;
+  margin:5px;
 }
 
 #usertype{
   text-align:center;
   padding:2px 10px;
   margin:auto;
+}
+
+#studentreview {
+  text-align: center;
+  border-style:solid;
+  padding:10px;
 }

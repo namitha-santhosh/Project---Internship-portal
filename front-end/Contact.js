@@ -14,7 +14,7 @@ class Contact {
 
     send() {
         console.info(this.formatMessage());
-        document.getElementById("formInfo").innerHTML = "We're not sending emails yet....next update";
+        document.getElementById("form").innerHTML = "We're not sending emails yet....next update";
     }
 
     formatMessage() {
