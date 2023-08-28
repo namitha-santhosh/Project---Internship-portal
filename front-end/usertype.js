@@ -1,8 +1,5 @@
 //usertype.js
 
-
-alert("Welcome to Internship Portal");
-
 const formInfo = document.getElementById("form");
 
 let today=new Date();
@@ -15,15 +12,8 @@ function showMessage(message) {
     formInfo.innerHTML = "<p>" + message + "<p>";
 }
 
-const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit",function(event) {
-    event.preventDefault();
-    const contact = new Contact(contactForm);
-    contact.send();
-    showMessage("Sending your msg...Thank you:" + contact.fullName);
-});
 
-const button = document.getElementById('Review');
+/* const button = document.getElementById('Review');
 
 button.addEventListener('click', function() {
     const company = document.getElementById("review")
@@ -35,4 +25,4 @@ button.addEventListener('click', function() {
         review.classList.add('d-none');
         button.textContent = 'SEE REVIEW';
     }
-})
+}) */

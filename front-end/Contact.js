@@ -1,3 +1,13 @@
+//Contact.js
+
+const contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit",function(event) {
+    event.preventDefault();
+    const contact = new Contact(contactForm);
+    contact.send();
+    showMessage("Sending your msg...Thank you:" + contact.fullName);
+});
+
 class Contact {
 
     constructor(form){

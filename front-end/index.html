@@ -6,15 +6,18 @@
         <link rel="stylesheet" href="site.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="usertype.js"></script>
+        <script>
+            alert("Welcome to Internship Portal");
+        </script>
     </head>
 
     <header>Internship World</header>
 
     <nav>
-        <a id="link" href="index.html">Home</a>
-        <a id="link" href="register.html">Register</a>
-        <a id="link" href="login.html">Login</a>
-        <a id="link" href="contact.html">Contact Us</a>
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="register.html">Register</a>
+        <a class="link" href="login.html">Login</a>
+        <a class="link" href="contact.html">Contact Us</a>
     </nav>
     
     <body>
@@ -26,16 +29,21 @@
         </div>
     
         <container>
-        <div>
+        <div class="about">
             <h3 class="about">About Us</h3>
-            <p class="about">We are a dedicated platform working to provide top quality internship opportunities to enthusiastic college students. We aim to make sure companies can find the best talents in the right places.</p>
+            <p>We are a dedicated platform working to provide top quality internship opportunities to enthusiastic college students. We aim to make sure companies can find the best talents in the right places.</p>
+            <p>Lorem ipsum dolor sit amet. In aspernatur rerum cum culpa ratione ea galisum omnis vel quaerat eius. Sit aperiam voluptatem et earum culpa non Quis quidem!Qui nesciunt dicta aut pariatur eligendi eum aliquid illo aut commodi dolores! Ut saepe reprehenderit et dolorem voluptatem est enim sunt a tempore rerum ut aliquid error eos reprehenderit porro? Sit inventore exercitationem non vero velit aut minima molestiae et magnam alias ut sint omnis et aliquid saepe. Et doloribus modi ut rerum sunt vel odio nemo. Ut asperiores omnis ut impedit ipsam et omnis delectus sed vero quos et debitis quam sed officiis cupiditate et voluptatem ipsum.</p>
+            <p>Lorem ipsum dolor sit amet. Qui delectus magnam cum molestiae vitae hic omnis omnis eos quibusdam illo id consequatur sunt est dolor dolores. Aut veniam consectetur ex optio exercitationem hic facilis voluptatibus non nemo laudantium id veniam fuga et dolores quae non soluta quae. Et obcaecati quod et eveniet debitis et soluta ullam ad dolore quia. Est soluta incidunt ea voluptates eligendi id illum fugiat vel explicabo enim est omnis nobis cum corporis magnam sit delectus officia!</p>
         </div>
         </container>
 
         <section>
-            <div id="studentreview">
-                <h3>Hear from the students!!</h3>
-                <a id="Review">See Review</a>
+            <div class="review">
+                <h3 id="studentreview">Feedback from previously placed students</h3>
+                <ul>
+                    <li>Fourth Year Engineering Student</li>
+                    <li>Third Year B.Com Student</li>
+                </ul>
             </div>
         </section>
 
@@ -43,6 +51,32 @@
             <h4>Review Title...</h4>
             <p>Review text...</p>
         </div> -->
+
+        <div class="location">
+        <h3 class="location">Find Opportunities Near You</h3>
+
+        <button id="loc" onclick="getLocation()">Choose your location</button>
+
+        <p id="demo"></p>
+
+        </div>
+
+        <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
+
+        function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
 
         </section>
         <script src="usertype.js"></script>
